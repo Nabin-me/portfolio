@@ -59,9 +59,9 @@ const ThemeSwitch = () => {
         <path
           d="M27.759 40.1084C33.7507 40.1084 38.6079 35.2512 38.6079 29.2596C38.6079 23.2679 33.7507 18.4107 27.759 18.4107C21.7674 18.4107 16.9102 23.2679 16.9102 29.2596C16.9102 35.2512 21.7674 40.1084 27.759 40.1084Z"
           stroke="#FA9E42"
-          stroke-width="0.809617"
-          stroke-linecap="round"
-          stroke-dasharray="0.08 5.34"
+          strokeWidth="0.809617"
+          strokeLinecap="round"
+          strokeDasharray="0.08 5.34"
         />
         <g filter="url(#filter3_f_140_825)">
           <path
@@ -78,9 +78,9 @@ const ThemeSwitch = () => {
           width="55.634"
           height="57.025"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -119,9 +119,9 @@ const ThemeSwitch = () => {
           width="22.8312"
           height="22.8312"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -140,9 +140,9 @@ const ThemeSwitch = () => {
           width="22.1834"
           height="22.1835"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -178,9 +178,9 @@ const ThemeSwitch = () => {
           width="14.7058"
           height="11.7802"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -200,8 +200,8 @@ const ThemeSwitch = () => {
           y2="57.025"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#EAEFF3" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#EAEFF3" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_140_825"
@@ -211,8 +211,8 @@ const ThemeSwitch = () => {
           y2="9.04055"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D1D1D1" />
-          <stop offset="1" stop-color="#B6B6B6" stop-opacity="0" />
+          <stop stopColor="#D1D1D1" />
+          <stop offset="1" stopColor="#B6B6B6" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_140_825"
@@ -222,8 +222,8 @@ const ThemeSwitch = () => {
           y2="6.25711"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2C57C6" />
-          <stop offset="1" stop-color="#DDF7F7" />
+          <stop stopColor="#2C57C6" />
+          <stop offset="1" stopColor="#DDF7F7" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_140_825"
@@ -233,8 +233,8 @@ const ThemeSwitch = () => {
           y2="51.4616"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D1D1D1" />
-          <stop offset="1" stop-color="#B6B6B6" stop-opacity="0" />
+          <stop stopColor="#D1D1D1" />
+          <stop offset="1" stopColor="#B6B6B6" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_140_825"
@@ -244,8 +244,8 @@ const ThemeSwitch = () => {
           y2="48.6782"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2C57C6" />
-          <stop offset="1" stop-color="#DDF7F7" />
+          <stop stopColor="#2C57C6" />
+          <stop offset="1" stopColor="#DDF7F7" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_140_825"
@@ -255,8 +255,8 @@ const ThemeSwitch = () => {
           y2="9.04055"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D1D1D1" />
-          <stop offset="1" stop-color="#B6B6B6" stop-opacity="0" />
+          <stop stopColor="#D1D1D1" />
+          <stop offset="1" stopColor="#B6B6B6" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_140_825"
@@ -266,8 +266,8 @@ const ThemeSwitch = () => {
           y2="6.25711"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2C57C6" />
-          <stop offset="1" stop-color="#DDF7F7" />
+          <stop stopColor="#2C57C6" />
+          <stop offset="1" stopColor="#DDF7F7" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_140_825"
@@ -277,8 +277,8 @@ const ThemeSwitch = () => {
           y2="51.4616"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D1D1D1" />
-          <stop offset="1" stop-color="#B6B6B6" stop-opacity="0" />
+          <stop stopColor="#D1D1D1" />
+          <stop offset="1" stopColor="#B6B6B6" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_140_825"
@@ -288,8 +288,8 @@ const ThemeSwitch = () => {
           y2="48.6782"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2C57C6" />
-          <stop offset="1" stop-color="#DDF7F7" />
+          <stop stopColor="#2C57C6" />
+          <stop offset="1" stopColor="#DDF7F7" />
         </linearGradient>
       </defs>
     </svg>

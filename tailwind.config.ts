@@ -9,11 +9,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily:{
+        'sans': ['var(--font-switzer)'],
       },
+      colors:{
+        primary: '#2C57C6',
+        secondary: '#91D8D8',
+        accent: '#FCC130',
+        background: '#EAEFF3',
+        text: '#000000',
+      },
+      gradientColorStops: {
+        'custom-gray': '#EAEFF3',
+        'custom-teal': '#91D8D8',
+        'custom-green': '#2DB7C9',
+      },
+      screens: {
+        '2xl': '1240px',
+      }
     },
   },
   plugins: [],
