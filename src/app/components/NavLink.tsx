@@ -3,6 +3,7 @@ import classNames from "classnames";
 import Link from "next/link";
 import ActiveBg from "./ActiveBg";
 import { motion } from "framer-motion";
+import { IconCircle, IconCircleFilled } from "@tabler/icons-react";
 
 type NavLinkProps = {
   href: string;
@@ -20,7 +21,7 @@ const NavLink: React.FC<NavLinkProps> = ({
   const linkClasses = classNames(
     "text-gray-500 hover:text-gray-900 relative whitespace-nowrap p-5",
     {
-      "font-medium z-10": active,
+      "text-black font-semibold z-10": active,
     }
   );
   const AnimatedActiveBg = () => {
@@ -33,17 +34,34 @@ const NavLink: React.FC<NavLinkProps> = ({
       </motion.div>
     );
   };
-  return (
-    <div className={linkClasses}>
-      {active && <AnimatedActiveBg />}
-      <Link
-        href={href}
-        className="absolute inset-0 flex items-center justify-center"
-        onClick={onClick}
+  const AnimatedIcon = () => {
+    return (
+      <motion.div
+        initial={{ y: -3, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ stiffness: 200, damping: 20, duration: 0.5 }}
       >
-        {children}
-      </Link>
-    </div>
+        <IconCircleFilled className="h-2 w-2 mr-1 text-primary" />
+      </motion.div>
+    );
+  };
+  return (
+    <motion.button
+      whileTap={{ scale: 0.6, y: -2 }}
+      transition={{ duration: 0.3 }}
+    >
+      <div className={linkClasses}>
+        {active && <AnimatedActiveBg />}
+        <Link
+          href={href}
+          className="absolute inset-0 flex items-center justify-center"
+          onClick={onClick}
+        >
+          {active && <AnimatedIcon />}
+          {children}
+        </Link>
+      </div>
+    </motion.button>
   );
 };
 
