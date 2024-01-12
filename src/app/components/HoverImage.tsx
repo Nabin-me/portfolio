@@ -115,7 +115,7 @@ const HoverImage = () => {
               transition: { duration: 2 },
             }}
           >
-            he's a sci-fi nerd!
+            is a sci-fi nerd!
           </motion.div>
         </Draggable>
       </div>
