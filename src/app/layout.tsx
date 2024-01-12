@@ -21,9 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${switzer.className} bg-background flex justify-center `}
+        className={`${switzer.className} bg-background dark:bg-black flex justify-center selection:bg-secondary `}
       >
-        <div className="max-w-screen-2xl w-full my-5">
+        <div className="max-w-screen-2xl w-full mt-10">
           <NavBar></NavBar>
           {children}
         </div>

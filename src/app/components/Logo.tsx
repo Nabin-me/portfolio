@@ -3,6 +3,7 @@ import React from "react";
 const Logo = () => {
   return (
     <svg
+      className="dark:invert"
       xmlns="http://www.w3.org/2000/svg"
       width="56"
       height="58"

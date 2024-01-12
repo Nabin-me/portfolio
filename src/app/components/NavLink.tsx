@@ -21,13 +21,14 @@ const NavLink: React.FC<NavLinkProps> = ({
   const linkClasses = classNames(
     "text-gray-500 hover:text-gray-900 relative whitespace-nowrap p-5",
     {
-      "text-black font-semibold z-10": active,
+      "text-black font-semibold z-20": active,
     }
   );
   const AnimatedActiveBg = () => {
     return (
       <motion.div
-        animate={{ scale: active ? 1.2 : 1 }}
+        initial={{ x: -5, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
       >
         <ActiveBg />
@@ -41,23 +42,26 @@ const NavLink: React.FC<NavLinkProps> = ({
         animate={{ y: 0, opacity: 1 }}
         transition={{ stiffness: 200, damping: 20, duration: 0.5 }}
       >
-        <IconCircleFilled className="h-2 w-2 mr-1 text-primary" />
+        <IconCircleFilled
+          className={`h-2 w-2 mr-1 text-primary ${
+            active ? "visible" : "invisible"
+          } `}
+        />
       </motion.div>
     );
   };
   return (
-    <motion.button
-      whileTap={{ scale: 0.6, y: -2 }}
-      transition={{ duration: 0.3 }}
-    >
+    <motion.button whileTap={{ scale: 0.995 }} transition={{ duration: 0.3 }}>
       <div className={linkClasses}>
         {active && <AnimatedActiveBg />}
         <Link
           href={href}
-          className="absolute inset-0 flex items-center justify-center"
+          className={`absolute inset-0 flex items-center justify-center ${
+            active && "text-black"
+          } }`}
           onClick={onClick}
         >
-          {active && <AnimatedIcon />}
+          <AnimatedIcon />
           {children}
         </Link>
       </div>
