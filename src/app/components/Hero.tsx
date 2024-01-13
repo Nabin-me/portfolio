@@ -5,8 +5,8 @@ import HoverImage from "./HoverImage";
 
 const Hero = () => {
   return (
-    <div className="flex justify-between dark:text-white mt-20">
-      <section className=" flex flex-col justify-center">
+    <div className="flex flex-col items-center dark:text-white mt-20 sm:flex-row">
+      <section className=" flex flex-col justify-center p-4 sm:p-0">
         <p className="text-2xl self">Hey there 👋, I am Nabin</p>
         <h1 className="text-5xl font-bold max-w-[460px] my-10">
           A visual designer based in Toronto.

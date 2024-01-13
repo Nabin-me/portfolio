@@ -30,6 +30,7 @@ const NavLink: React.FC<NavLinkProps> = ({
         initial={{ x: -5, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
+        className="relative w-[50px] overflow-hidden drop-shadow-lg"
       >
         <ActiveBg />
       </motion.div>

@@ -29,9 +29,10 @@ const Button: React.FC<ButtonProps> = ({ type, children, onClick }) => {
         boxShadow:
           "0px 4px 4px 0px rgba(0, 0, 0, 0.08), 0px 0px 4px 0.463px rgba(0, 0, 0, 0.25) inset",
         scale: 0.99,
+        transform: "translateY(2px)",
       }}
       whileHover={{
-        filter: "hue-rotate(180deg)",
+        transform: "translateY(-2px)",
         transition: { type: "spring", stiffness: 300, damping: 20 },
       }}
     >
